@@ -28,13 +28,15 @@ const SecondaryLandingPage = () => {
 
   return (
     <section className="relative w-full h-screen bg-[#004279] flex flex-col items-center justify-center p-5">
-      <div className="mb-10 flex flex-col items-center justify-between h-full text-center">
-        <h1 className='font text-[48px] md:text-[64px] lg:text-[100px] text-white font-bold text-center leading-tighter'>
+      <div className="mb-10 flex flex-col items-center justify-center sm:justify-between h-full text-center">
+        <h1 className='font text-[32px] sm:text-[48px] md:text-[64px] lg:text-[100px] text-white font-bold text-center leading-tighter'>
           40 ÅR AV GALENSKAP
         </h1>
-        <CTAButton 
-          className="bg-[#ffd800] text-black hover:text-[#004279]"
-        />
+        <div className='p-8 sm:p-0'>
+          <CTAButton 
+            className="bg-[#ffd800] text-black hover:text-[#004279] "
+          />
+        </div>
         <div className='flex flex-row items-center justify-center mt-6'>
           {
             images.map((image, index) => {
